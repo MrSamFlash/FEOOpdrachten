@@ -1,0 +1,70 @@
+
+/*DE HAMBURGER*/
+#menu {
+    width: 50px;
+    height: 50px;
+    background-image: url("menu.png");
+    background-size: contain;
+    cursor: pointer;
+}
+#menu:hover {
+    opacity: 0.6;
+}
+
+/*HET MENY ZELF*/
+/* menu dicht*/
+.menu-list {
+    display: none;
+}
+/* menu open*/
+.menu-list li {
+    list-style-type: none;
+    display: block;
+    height: auto;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+    /* Poging tot transition inbouwen!
+    transition: all 500ms ease; */
+}
+.menu-list-open {
+    display: block;
+}
+
+.menu-list li a {
+    text-decoration: none;
+}
+.menu-list :hover {
+    filter: brightness(125%);
+    text-decoration-line: underline;
+}
+
+/*Sjieke letters!*/
+@font-face {
+    font-family: Csar;
+    src: url(csar2.ttf);
+  }
+.sjiekeletters {
+    font-family: Csar;
+}
+.center {
+    text-align: center;
+}
+
+/*ACHTERGROND KLEUREN KNOPPEN*/
+.background {
+    background-color: white;
+}
+.red-background {
+    background-color: firebrick;
+}
+.orange-background {
+    background-color: orange;
+}
+.purple-background {
+    background-color: purple;
+}
+.green-background {
+    background-color: green;
+}

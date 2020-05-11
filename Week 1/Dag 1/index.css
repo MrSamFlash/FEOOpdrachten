@@ -1,0 +1,56 @@
+/*Grid*/
+.containerhome {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: auto auto; 
+    justify-self: center;
+}
+.vignette {
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+
+.buttonyes{
+    float: left;
+    color: limegreen;
+    border-style: solid;
+    border-color: limegreen;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 125px;
+}
+.buttonno{
+    float: right;
+    color: red;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 125px;
+}
+
+/*kleur grijs ondertitel*/
+.pg{
+    color: grey;
+}
+/*namen*/
+.naam {
+    margin-bottom: 1px;
+    font-size: larger;
+}
+img{
+    padding-top: 20px;
+}
