@@ -25,11 +25,11 @@ items.forEach((item) => console.log(item.price));
 
 // .some
 const hasCheapItemsMaybe = items.some((item) => item.price <= 75);
-console.log(hasCheapItemsMaybe);
+console.log(hasCheapItemsMaybe); //true or false
 
 // .every
 const hasCheapItems = items.every((item) => item.price <= 100);
-console.log(hasCheapItems);
+console.log(hasCheapItems); //true or false
 
 // .reduce
 const total = items.reduce((currentTotal, item) => item.price + currentTotal, 0);
