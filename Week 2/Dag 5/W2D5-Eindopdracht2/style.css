@@ -9,19 +9,25 @@
 }
 
 /* radio buttons */
-.banners {
+.banner {
     background-color: #660000;
     color: #f8f8ff;
     padding: 20px;
 }
+.footer {
+    background-color: #660000;
+    color: #f8f8ff;
+    padding: 10px;
+}
 .buttonlist {
     margin-left: 50px;
     margin-right: 50px;
+    text-align: center;
 }
 .radiobutton {
     display: inline;
-    align-items: center;
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Logo */
