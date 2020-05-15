@@ -47,6 +47,17 @@
     grid-row-gap: 10px;
 }
 
+/* Media Queries */
+@media screen and (max-width: 1300px) {
+    .list{
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: max-content;
+        grid-row-gap: 10px;
+    }  
+}
+
 /* Lettertype */
 @font-face {
     font-family: Deco;
