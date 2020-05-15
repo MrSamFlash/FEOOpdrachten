@@ -1,0 +1,48 @@
+.background {
+    background-color: #1a0000;
+    font-family: Deco;
+    font-size: larger;
+}
+.textFooter {
+    text-align: center;
+    font-size: smaller;
+}
+
+/* radio buttons */
+.banners {
+    background-color: #660000;
+    color: #f8f8ff;
+    padding: 20px;
+}
+.buttonlist {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.radiobutton {
+    display: inline;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* Logo */
+.logo {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Filmlijst */
+.list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: max-content;
+    grid-row-gap: 10px;
+}
+
+/* Lettertype */
+@font-face {
+    font-family: Deco;
+    src: url(Mouse_Deco.ttf);
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winceoland - Kijk redelijk beperkt films en series</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="movies.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body class="background">
+    <img src="Winceoland.png" class="logo">
+
+    <nav id="filterbuttons" class="banners">
+        <form action="" class="buttonlist">
+            <input type="radio" name="category" value="nieuweFilms" id="nieuweFilms" class="radiobutton">
+            <label for="nieuweFilms">NEWEST FILMS</label>
+            <input type="radio" name="category" value="avengers" id="avengers" class="radiobutton">
+            <label for="avengers">AVENGERS FILMS</label>
+            <input type="radio" name="category" value="xMen" id="xMen" class="radiobutton">
+            <label for="xMen">X-MEN FILMS</label>
+            <input type="radio" name="category" value="princess" id="princess" class="radiobutton">
+            <label for="princess">PRINCESS FILMS</label>
+            <input type="radio" name="category" value="batman" id="batman" class="radiobutton">
+            <label for="batman">BATMAN FILMS</label>
+        </form>
+    </nav>
+
+    <div id="movieMain">
+        <ul id="movieList" class="list">
+
+        </ul>
+    </div>
+
+    <footer class="banners textFooter">
+        <p>© Flash Coding Co. 2020</p>
+    </footer>
+
+</body>
+
+</html>
