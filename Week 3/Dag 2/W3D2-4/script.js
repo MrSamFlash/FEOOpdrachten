@@ -1,24 +1,22 @@
 const getSucceedingPromise = (message, ms) => {
-    // Maak hier je functie die een succeeding Promise retourneert
-    const success = new Promise((resolve, reject) => {
+    const succesMessage = new Promise((resolve, reject) => {
         setTimeout(() => resolve(message), ms);
-    })
-    return success;
+    });
+    return succesMessage;
 };
 
 const getFailingPromise = (errorMessage, ms) => {
-    // Maak hier je functie die een failing Promise retourneert
-    const failure = new Promise((resolve, reject) => {
+    const failMessage = new Promise((resolve, reject) => {
         setTimeout(() => reject(errorMessage), ms);
-    })
-    return failure;
+    });
+    return failMessage;
 };
 
 const getRandomSucceedingOrFailingPromise = id => {
     // This randomly resolves to true or false
     let promiseShouldSucceed = Math.random() >= 0.5;
     // This gets some semi-random amound of seconds under the 5seconds:
-    let randomMillisecond = Math.floor(Math.random() * Math.floor(5000));
+    let randomMillisecond = Math.floor(Math.random() * 5000);
 
     if (promiseShouldSucceed) {
         return getSucceedingPromise(
@@ -32,7 +30,6 @@ const getRandomSucceedingOrFailingPromise = id => {
         );
     }
 };
-
 
 const createPromiseElement = promise => {
     const div = document.createElement("div");
@@ -57,7 +54,8 @@ const add50Promises = () => {
     while (i <= 50) {
         let id = i;
         allPromises.push({
-            id
+            id: i,
+            state: "pending"
         });
         consumePromise(allPromises, id);
         i++;
@@ -68,14 +66,17 @@ const add50Promises = () => {
 
 const consumePromise = function (allPromises, id) {
     const promise = getRandomSucceedingOrFailingPromise(id);
+    //consumeer hier je Promise
     console.log(promise);
-    promise
-        .then(resolved => {
-            console.log(`msg: ${resolved}`);
-        })
-        .catch(error => {
-            console.log(`msg: ${error}`);
-        });
+    promise.then(resolved => {
+        console.log(resolved, "Yep, dit werkte!");
+        allPromises[id].state = "resolved";
+        showPromises(allPromises);
+    }).catch(errored => { //de .then en .catch moeten aan dezelfde variabele worden gekoppeld!
+        console.log(errored, "Helaas pindakaas!");
+        allPromises[id].state = "errored";
+        showPromises(allPromises); //Kleurupdaters in de {}!
+    });
 };
 
 const registerEventHandlers = () => {
