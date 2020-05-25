@@ -1,0 +1,28 @@
+<!-- Helaas ben ik niet tevreden over mijzelf deze opdracht. Async JavaScript blijkt nog erg moeilijk voor mij. 
+    Volgende keer meer geluk! Wil hier zeker later op terugkomen... Hopelijk heb ik iig mijn intenties duidelijk kunnen maken -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome To-Do List Action!</title>
+</head>
+
+<body>
+    <h1>Keiharde To-Do List Actie!</h1>
+
+    <form method="POST" action="https://wincacademydatabase.firebaseio.com/Sam/Tasks.json">
+        <input type="text" id="newtask" placeholder="e.g. feed the socks, fold the cat...">
+        <button type="button" id="addbutton">Add task!</button>
+    </form>
+
+    <ul id="tasklist">
+    </ul>
+
+    <script src="api-client.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
