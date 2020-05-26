@@ -1,0 +1,43 @@
+.link1:hover{
+  font-weight: bold;
+  color: lightblue;
+}
+
+.link2:active{
+  font-style: italic;
+  color: red;
+}
+
+.link3:visited{
+  color: yellow;
+}
+
+form input:focus{
+  color: green;
+  font-size: 20px;
+}
+
+nav{
+  background-color: darkblue;
+}
+
+ul li{
+  padding: 10px;
+}
+
+ul li:hover{
+  background-color: tomato;
+  color: aliceblue;
+}
+
+ul li:first-child{
+  padding-left: 0;
+}
+
+.currentPage{
+  background-color: gray;
+}
+
+ul input:focus{
+  border: 5px solid aqua;
+}
