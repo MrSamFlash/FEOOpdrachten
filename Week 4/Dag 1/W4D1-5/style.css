@@ -23,6 +23,7 @@ h1::before  {
     width: 30px;
     position: absolute top left;
     border-radius: 200px 0px 0px 200px;
+    margin-right: 10px;
 }
 
 h1::after   {
@@ -33,6 +34,7 @@ h1::after   {
     width: 30px;
     position: absolute top right;
     border-radius: 0px 200px 200px 0px;
+    margin-left: 10px;
 }
 
 /* selector voor het linker halve cirkeltje, selector voor het rechter halve cirkeltje {
