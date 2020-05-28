@@ -1,0 +1,59 @@
+body {
+  background-color: #c3cfe2;
+}
+
+.container {
+  justify-items: center;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.divbg {
+  transition: 500ms background-color ease-in-out;
+  border-radius: 20px;
+}
+
+.divbg:hover {
+  background-color: midnightblue;
+}
+
+.hbg {
+  transition: 500ms opacity ease-in-out;
+  border-radius: 20px;
+}
+
+.hbg:hover {
+  opacity: 0;
+}
+
+.button {
+  position: absolute;
+  opacity: 0;
+  transition: 500ms opacity ease-in-out;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    justify-items: center;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .container {
+    justify-items: center;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: min-content;
+    grid-gap: 10px;
+  }
+}
