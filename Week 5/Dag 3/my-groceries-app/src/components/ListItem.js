@@ -1,7 +1,12 @@
 import React from "react";
 
-function ListItem({ item }) {
-  return <li key={item.id}>{item.title}</li>;
-}
+let ListItem = (props) => {
+  return <li onClick={props.handleClickGroceryItem}>{props.title}</li>;
+};
+
+// function ListItem(props) {
+//   const { title } = props;
+//   return <li> {title} </li>;
+// }
 
 export default ListItem;
